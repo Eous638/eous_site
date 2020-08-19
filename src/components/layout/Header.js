@@ -88,16 +88,6 @@ const Header = ({
           <Logo />
           {!hideNav &&
             <>
-              <button
-                ref={hamburger}
-                className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
-              >
-                <span className="screen-reader">Menu</span>
-                <span className="hamburger">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
               <nav
                 ref={nav}
                 className={
